@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoT Sensors & Climate Change</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    nav#navigation {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url(https://iotsecurityfoundation.org/wp-content/uploads/2018/06/smart-buildings-2.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #102a23;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: -1;
+    }
+
+    header.hero {
+      background: url(https://iotsecurityfoundation.org/wp-content/uploads/2018/06/smart-buildings-2.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+    }
+
+    .hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #2d6a4f;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .nav-btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #40916c;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-btn:hover {
+      background-color: #1b4332;
+    }
+
+    footer {
+      background: #d8f3dc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>IoT Sensors for Energy Efficiency</h1>
+    <p>Using smart sensors to reduce energy waste and monitor environmental impact</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What Are IoT Sensors?</h2>
+      <ul>
+        <li>The Internet of Things (IoT) refers to physical devices connected to the internet that collect and share data.</li> 
+        <li>They help us monitor and control climate data in real time.</li>
+      </ul>
+      <img src="comp.png" alt="comp">
+    </section>
+
+    <section>
+      <h2>Applications in Buildings</h2>
+      <ul>
+        <li>Occupancy sensors reduce lighting and HVAC energy use when rooms are empty.</li>
+        <li>Thermal sensors help balance indoor temperatures efficiently.</li>
+        <li>Smart meters track real-time energy consumption and inform users.</li>
+        <li>Leak detection sensors help prevent water waste and damage.</li>
+      </ul>
+    </section>
+
+    <section>
+    <h2>Real Case Scenario</h2>
+    <div style="display: flex; justify-content: space-between; text-align: center;">
+        <div>
+        <p><strong>Smart Thermostat</strong></p>
+        <img src="thermo.png" alt="Smart Thermostat" style="width: 150px;">
+        </div>
+        <div>
+        <p><strong>Smart Lighting</strong></p>
+        <img src="light.png" alt="Smart Lighting" style="width: 150px;">
+        </div>
+        <div>
+        <p><strong>Smart Plugs</strong></p>
+        <img src="plug.png" alt="Smart Plugs" style="width: 150px;">
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <h2>Benefits of IoT for Climate</h2>
+    <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+        <img src="globe.png" alt="Environmental Impact" style="width: 150px; margin-right: 1rem;">
+        <div>
+        <h3>Environmental Impact</h3>
+        <ul>
+            <li>Less energy wasted = lower CO<sub>2</sub> emissions</li>
+            <li>Supports climate goals in cities and buildings</li>
+        </ul>
+        </div>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+        <div>
+        <h3>Efficiency & Automation</h3>
+        <ul>
+            <li>Real-time data = faster response to energy waste</li>
+            <li>Automation reduces human error (lights left on, heating running too long)</li>
+        </ul>
+        </div>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+        <img src="benefit.png" alt="Cost Savings" style="width: 150px; margin-right: 1rem;">
+        <div>
+        <h3>Cost Savings</h3>
+        <ul>
+            <li>Lower utility bills for households and businesses</li>
+            <li>Early detection of faults reduces maintenance costs</li>
+        </ul>
+        </div>
+    </div>
+
+    <div style="display: flex; align-items: flex-start;">
+        <div>
+        <h3>Smarter Infrastructure</h3>
+        <ul>
+            <li>Enables data-driven planning</li>
+            <li>Forms the backbone of smart buildings and smart cities</li>
+        </ul>
+        </div>
+    </div>
+    </section>
+
+
+    <section>
+      <h2>Challenges</h2>
+      <ul>
+        <li>Data privacy and cybersecurity risks due to constant connectivity.</li>
+        <li>High installation and maintenance costs.</li>
+        <li>Integration complexity with existing systems.</li>
+        <li>Need for trained personnel to manage and analyze data.</li>
+      </ul>
+    </section>
+  </main>
+
+  <nav id="navigation">
+    <button class="nav-btn" onclick="window.location.href='Albania.html'">4. Albania</button>
+  </nav>
+
+  <footer>
+    Part of the Informatik & Climate Change Project • IoT Sensors • 2025
+  </footer>
+</body>
+</html>

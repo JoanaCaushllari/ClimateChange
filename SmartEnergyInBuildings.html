@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Energy in Buildings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    nav#navigation {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url(https://propacity.com/blogs/wp-content/uploads/2021/03/Smart-Buildings-1.png) no-repeat center center fixed;
+      background-size: cover;
+      color: #102a23;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: -1;
+    }
+
+    header.hero {
+      background: url(https://propacity.com/blogs/wp-content/uploads/2021/03/Smart-Buildings-1.png) no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+    }
+
+    .hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #2d6a4f;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-row {
+      display: flex;
+      gap: 2%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      width: 48%;
+    }
+
+    .nav-btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #40916c;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-btn:hover {
+      background-color: #1b4332;
+    }
+
+    footer {
+      background: #d8f3dc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Smart Energy Use in Buildings</h1>
+    <p>Integrating smart technology in buildings to promote energy efficiency and combat climate change</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why Smart Energy in Buildings?</h2>
+      <ul>
+        <li>Buildings account for approximately 40% of energy consumption in the EU.</li>
+        <li>The building sector is one of the biggest levers for the energy transition.</li>
+        <li>The new EU Energy Performance of Buildings Directive (EPBD 2024/1275) sets clear targets for emission reduction.</li>
+        <li>By 2050, the entire EU building stock must be zero-emission.</li>
+      </ul>
+      <img src="smartBuildings.png" alt="smart Buildings">
+    </section>
+
+    <section>
+      <h2>On-Site Renewables & Storage</h2>
+      <ul>
+        <li>Integration of rooftop PV panels, battery storage, and heat pumps helps reduce reliance on the grid.</li>
+        <li>These systems mitigate the impact of electricity price volatility and external supply dependency.</li>
+        <li>Flexible loads, such as electric vehicle (EV) charging and thermal storage, help shift demand away from peak times.</li>
+        <li>Electricity is used when it's cheap and abundant—like midday when the sun is shining.</li>
+      </ul>
+      <div class="image-row">
+        <img src="png.png" alt="Image 1">
+        <img src="png1.png" alt="Image 2">
+      </div>
+    </section>
+
+    <section>
+      <h2>Virtual Power Plants (VPPs)</h2>
+      <ul>
+        <li>Aggregators bundle many small energy assets into one dispatchable power plant.</li>
+        <li>Thousands of individual PV systems, batteries, and flexible loads operate as a single unit.</li>
+        <li>This model allows participation in energy markets like day-ahead and balancing services.</li>
+        <li>Building owners can generate revenue by offering their energy flexibility to the grid.</li>
+      </ul>
+      <img src="virtual_power_plant.png" alt="Virtual power plants">
+    </section>
+
+    <section>
+      <h2>Outlook</h2>
+      <ul>
+        <li><strong>The change is inevitable:</strong> Regulation and energy costs are driving adoption.</li>
+        <li><strong>The technology is ready:</strong> PV, batteries, and smart control systems are market-ready.</li>
+        <li><strong>The future is connected:</strong> VPPs create value for individuals and the energy system.</li>
+        <li><strong>Smart energy is a matter of "when," not "if."</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <nav id="navigation">
+    <button class="nav-btn" onclick="window.location.href='iot.html'">3. IoT Sensors</button>
+  </nav>
+
+  <footer>
+    Part of the Informatik & Climate Change Project • Smart Buildings • 2025
+  </footer>
+</body>
+</html>

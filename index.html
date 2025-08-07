@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Energy Efficiency Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000000;
+      color: #001d15;
+      line-height: 1.6;
+    }
+
+    header.hero {
+      background: url('https://www.ocpower.org/wp-content/uploads/Blog-EnergyEfficiencyDay-Main.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+    }
+
+    .hero * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .hero .opening-text {
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .cta-btn {
+      background-color: #f72585;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #b5179e;
+    }
+
+    #navigation {
+      background: #edf6f9;
+      display: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      animation: fadeIn 0.6s ease-in-out forwards;
+    }
+
+    .nav-btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #40916c;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-btn:hover {
+      background-color: #1b4332;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #d8f3dc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+    function showNavigation() {
+      const nav = document.getElementById('navigation');
+      nav.style.display = 'flex';
+      nav.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Smart Energy Efficiency Solutions</h1>
+    <p>How Technology Can Help Fight Climate Change in Buildings and Cities</p>
+    <p class="opening-text">
+      As climate change accelerates, energy consumption in cities and buildings has become a major contributor to global emissions. However, emerging technologies offer smart, data-driven solutions to improve energy efficiency, reduce waste, and build a sustainable future.<br><br>
+      This project explores how informatics—through IoT, artificial intelligence, and digital innovation—can transform our approach to energy, making our urban spaces smarter and greener.
+    </p>
+    <button class="cta-btn" onclick="showNavigation()">Explore Topics</button>
+  </header>
+
+  <nav id="navigation">
+    <button class="nav-btn" onclick="window.location.href='intro.html'">1. Intro & Climate Impact</button>
+    <button class="nav-btn" onclick="window.location.href='SmartEnergyInBuildings.html'">2. Smart Energy in Buildings</button>
+    <button class="nav-btn" onclick="window.location.href='iot.html'">3. IoT Sensors</button>
+    <button class="nav-btn" onclick="window.location.href='Albania.html'">4. Albania</button>
+    <button class="nav-btn" onclick="window.location.href='ai.html'">5. AI Optimization</button>
+    <button class="nav-btn" onclick="window.location.href='awareness.html'">6. Challenges & Awareness</button>
+  </nav>
+
+  <footer>
+    Made by Students • Informatik & Climate Project • 2025
+  </footer>
+</body>
+</html>
